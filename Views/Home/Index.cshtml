@@ -1,0 +1,37 @@
+@model IEnumerable<Week10.Models.Project>
+
+@{
+ViewData["Title"] = "Home";
+}
+
+<h1>Lab Exercises</h1>
+
+@if (Model != null && Model.Any())
+{
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Project Summary</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var project in Model)
+    {
+    <tr>
+        <td>@project.Name</td>
+        <td>@project.Description</td>
+        <td>
+            @await Component.InvokeAsync("ProjectSummary", new { projectId = project.Id })
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+else
+{
+<p>exercises</p>
+
+}

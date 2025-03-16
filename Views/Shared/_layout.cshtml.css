@@ -1,0 +1,54 @@
+/* For bundling and minification details, refer to:
+   https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+a {
+    color: #0066b2; /* Slight variation of blue for uniqueness */
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1a5fa0;
+    border-color: #164f8a;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #ffffff;
+    background-color: #1a5fa0;
+    border-color: #164f8a;
+}
+
+.border-top {
+    border-top: 1px solid #dcdcdc;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.box-shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed; /* Ensuring footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}

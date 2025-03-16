@@ -1,0 +1,10 @@
+<!-- File: Views/Shared/Components/ProjectSummary/Default.cshtml -->
+@model Week10.Models.Project
+
+<div class="project-summary">
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+    <p><strong>Current Status:</strong> @Model.Status</p>
+    <p><strong>Started On:</strong> @Model.StartDate.ToShortDateString()</p>
+    <p><strong>Completion Date:</strong> @Model.EndDate?.ToShortDateString()</p>
+</div>
